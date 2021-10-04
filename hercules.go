@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -15,24 +14,10 @@ var app2 = cli.NewApp()
 func main() {
 	model.Info(app)
 	model.Commands(app)
-	// Commands()
 	err := app.Run(os.Args)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
-func Commands() {
-	app.Commands = []cli.Command{
-		{
-			Name:    "peppers",
-			Aliases: []string{"a"},
-			Usage:   "Add peppers to your pizza",
-			Action: func(c *cli.Context) {
-				//go:generate ./modules/model/newList.sh Person
-
-				fmt.Println("success")
-			},
-		},
-	}
-}
+type ClientFunction func(string) error

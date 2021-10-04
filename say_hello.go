@@ -11,3 +11,8 @@ func SayHelloName(name string) string {
 
 	return "hello world" + name
 }
+
+func SayHelloFunc(name ClientFunction) string {
+
+	return "hello world"
+}
