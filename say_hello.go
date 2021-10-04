@@ -16,3 +16,8 @@ func SayHelloFunc(name ClientFunction) string {
 
 	return "hello world"
 }
+
+func SayHelloFuncName(name ClientFunction) string {
+
+	return "hello world"
+}
