@@ -15,6 +15,11 @@ func SayHelloFunc(name ClientFunction) string {
 	return "hello world"
 }
 
+func NewOrder(webhook WebhookHandler) {
+
+	webhook.NewOrder(nil, nil)
+}
+
 func SayHelloFuncName(name ClientFunction) string {
 
 	return "hello world"
