@@ -20,4 +20,9 @@ func main() {
 	}
 }
 
+func NewOrder(webhook WebhookHandler) {
+
+	webhook.NewOrder(nil, nil)
+}
+
 type ClientFunction func(string) error

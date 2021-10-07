@@ -25,11 +25,10 @@ func Info(app *cli.App) {
 func Commands(app *cli.App) {
 	app.Commands = []cli.Command{
 		{
-			Name:    "peppers",
+			Name:    "product",
 			Aliases: []string{"p"},
-			Usage:   "Add peppers to your pizza",
+			Usage:   "Add product feature file",
 			Action: func(c *cli.Context) {
-
 				//go:generate ./newList.sh Person
 				fmt.Println("success")
 			},

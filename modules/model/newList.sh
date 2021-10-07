@@ -4,7 +4,7 @@ echo 'halo'
 
 TYPE=$1
 
-cat > ./modules/model/${TYPE}List.go <<EOL
+cat > ./${TYPE}List.go <<EOL
 package model
 type ${TYPE}List []*${TYPE}
 
