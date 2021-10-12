@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func SayHello(name string) string {
 
 	return "hello world" + name
@@ -18,4 +20,12 @@ func SayHelloFunc(name ClientFunction) string {
 func SayHelloFuncName(name ClientFunction) string {
 
 	return "hello world"
+}
+
+type ClientFunction func() error
+
+func TestFunction() error {
+
+	fmt.Println("halo test function")
+	return nil
 }
