@@ -12,7 +12,7 @@ import (
 var app = cli.NewApp()
 var app2 = cli.NewApp()
 
-//go:generate ./modules/model/newList.sh Person
+//go:generate ./modules/newList.sh Person
 func main() {
 	modules.Info(app)
 	modules.Commands(app)
@@ -21,6 +21,10 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	// e := InitializeString()
+	// fmt.Println(e)
+	// e.Start()
 }
 
 // func Commands() {
